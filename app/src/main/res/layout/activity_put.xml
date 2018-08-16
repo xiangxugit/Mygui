@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="10"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <include android:layout_width="match_parent" android:layout_height="match_parent"  layout="@layout/head" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        >
+        <include android:layout_width="match_parent" android:layout_height="match_parent"   layout="@layout/ad" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="默认短信模板"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:text="订单号您的朋友已经把物品放在柜机地址，取件码：2160，请您在取件日期：23:59前取出物品，超时收取滞留金"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="默认短信模板"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:text="订单号您的朋友已经把物品放在柜机地址，取件码：2160，请您在取件日期：23:59前取出物品，超时收取滞留金"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="默认短信模板"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:text="订单号您的朋友已经把物品放在柜机地址，取件码：2160，请您在取件日期：23:59前取出物品，超时收取滞留金"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        >
+        <include android:layout_width="match_parent" android:layout_height="0dp"  android:layout_weight="1" layout="@layout/buttom" />
+    </LinearLayout>
+
+</LinearLayout>

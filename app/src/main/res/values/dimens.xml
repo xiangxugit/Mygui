@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="middle_margin">10dp</dimen>
+    <dimen name="headhgiht">50dp</dimen>
+
+
+
+
+    <!--字体大小-->
+    <dimen name="headleft">20sp</dimen>
+    <dimen name="headtopright">10sp</dimen>
+
+
+
+
+
+</resources>

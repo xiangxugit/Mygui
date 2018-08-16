@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyGui</string>
+
+    <string name="headtitle">My 柜</string>
+    <string name="headrighttitle">只为快递最后100米的安全与便捷</string>
+    <string name="scanregister">请使用微信扫码注册</string>
+    <string name="scanregisterdetail">打开微信"扫一扫" 关注并注册</string>
+    <string name="choose">情选择需要的服务</string>
+    <string name="get">取出</string>
+    <string name="put">存放</string>
+
+
+</resources>
