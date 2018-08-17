@@ -34,7 +34,7 @@ public class IndexActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent();
-                it.setClass(IndexActivity.this,MainActivity.class);
+                it.setClass(IndexActivity.this,GetPutActivity.class);
                 startActivity(it);
             }
         });

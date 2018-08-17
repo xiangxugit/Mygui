@@ -51,7 +51,7 @@
                 >
 
                 <LinearLayout
-                    android:gravity="left"
+                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_weight="3"
                     android:layout_height="wrap_content"
@@ -64,16 +64,17 @@
                     android:background="@mipmap/gezi"
                     />
                 <TextView
+                    android:focusable="true"
                     android:id="@+id/lefttitle"
                     android:layout_toRightOf="@+id/leftico"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/put"
+                    android:text="@string/littlebox"
                     />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:gravity="left"
+                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_weight="3"
                     android:layout_height="wrap_content"
@@ -88,12 +89,12 @@
                         android:layout_toRightOf="@+id/leftico"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/put"
+                        android:text="@string/middlebox"
                         />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:gravity="left"
+                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_weight="2"
                     android:layout_height="wrap_content"
@@ -108,7 +109,7 @@
                         android:layout_toRightOf="@+id/leftico"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/put"
+                        android:text="@string/bigbox"
                         />
                 </LinearLayout>
 
@@ -128,7 +129,8 @@
                 <TextView
                     android:layout_toRightOf="@+id/leftico"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:text="订单信息"
                     />
 
@@ -136,7 +138,8 @@
                 <LinearLayout
                     android:gravity="left"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal"
                     >
                     <TextView
@@ -148,6 +151,8 @@
                         android:layout_toRightOf="@+id/leftico"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+
                         />
                 </LinearLayout>
 
@@ -155,7 +160,8 @@
                 <LinearLayout
                     android:gravity="left"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal"
                     >
                     <TextView
@@ -167,6 +173,7 @@
                         android:layout_toRightOf="@+id/leftico"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
                         />
                 </LinearLayout>
 
@@ -174,7 +181,8 @@
                 <LinearLayout
                     android:gravity="left"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal"
                     >
                     <TextView
@@ -186,14 +194,15 @@
                         android:layout_toRightOf="@+id/leftico"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
+                        android:focusableInTouchMode="true"
                         />
                 </LinearLayout>
 
                 <LinearLayout
                     android:gravity="left"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal"
                     >
                     <CheckBox
@@ -212,7 +221,8 @@
                 <Button
 
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:text="同意（支付金额2元）"
                     />
 
@@ -230,7 +240,12 @@
         android:layout_weight="2"
         android:orientation="vertical"
         >
-        <include android:layout_width="match_parent" android:layout_height="0dp"  android:layout_weight="1" layout="@layout/head" />
+
+        <include
+            layout="@layout/buttom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>

@@ -11,28 +11,64 @@
         android:id="@+id/footclick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blue"
+        android:background="@color/guitop"
         android:orientation="horizontal"
         android:maxHeight="@dimen/headhgiht"
         >
 
+        <LinearLayout
+            android:id="@+id/leftall"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="@color/guitop"
+            android:orientation="horizontal"
+            android:maxHeight="@dimen/headhgiht"
+            >
+        <!--<ImageView-->
+            <!--android:id="@+id/back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/middle_margin"-->
+            <!--android:textColor="@color/Ghostwhite"-->
+            <!--android:textSize="@dimen/headleft"-->
+            <!--/>-->
+
 
         <TextView
+            android:id="@+id/backvalue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/headtitle"
+            android:text="返回"
             android:padding="@dimen/middle_margin"
+            android:textColor="@color/Ghostwhite"
             android:textSize="@dimen/headleft"
             />
 
 
+    </LinearLayout>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_weight="6"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/headrighttitle"
+            android:text="占存物品"
+            android:padding="@dimen/middle_margin"
+            android:textSize="@dimen/headleft"
+            android:gravity="center"
+            android:textColor="@color/Ghostwhite"
+            />
+
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="119"
+            android:textColor="@color/Ghostwhite"
             android:padding="@dimen/middle_margin"
             android:textSize="@dimen/headleft"
             />
+
 
 
 

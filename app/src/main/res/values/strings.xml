@@ -8,6 +8,9 @@
     <string name="choose">情选择需要的服务</string>
     <string name="get">取出</string>
     <string name="put">存放</string>
-
+    <string name = "littlebox">小号格子(一公斤以下物品)</string>
+    <string name = "middlebox">中号格子(三公斤以下物品)</string>
+    <string name = "bigbox">大号格子(五公斤以下物品)</string>
 
 </resources>
+

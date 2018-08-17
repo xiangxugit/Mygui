@@ -8,7 +8,8 @@
 
     <!--字体大小-->
     <dimen name="headleft">20sp</dimen>
-    <dimen name="headtopright">10sp</dimen>
+    <dimen name="headtopright">20sp</dimen>
+    <dimen name="headleftmiddle">10sp</dimen>
 
 
 

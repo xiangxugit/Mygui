@@ -6,9 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:weightSum="10"
+    android:weightSum="11"
     >
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -21,7 +20,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
+        android:layout_weight="4"
         android:orientation="vertical"
         >
         <include android:layout_width="match_parent" android:layout_height="match_parent"   layout="@layout/ad" />
@@ -29,26 +28,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="5"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="vertical"
         >
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="left"
+            android:layout_marginTop="@dimen/middle_margin"
             android:orientation="vertical"
             >
 
 
-            <ImageView
+            <TextView
                 android:id="@+id/logo"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:background="@mipmap/gezi"
+                android:layout_height="60dp"
+                android:text="My柜"
+                android:gravity="center"
+                android:textColor="@color/aliceblue"
+                android:background="@color/guitop"
+                android:padding="@dimen/middle_margin"
+                android:textSize="@dimen/headleft"
+                android:layout_marginLeft="@dimen/middle_margin"
                 />
             <LinearLayout
                 android:id="@+id/righttest"
@@ -57,11 +62,12 @@
                 android:layout_height="50dp"
                 android:gravity="left"
                 android:orientation="vertical"
+                android:layout_marginLeft="20dp"
                 >
                 <TextView
                     android:id="@+id/time"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:text="2018-08-09 19:27"
                     />
 
@@ -70,8 +76,8 @@
                     android:id="@+id/address"
                     android:layout_below="@+id/time"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="武汉市武昌区中北路停车场"
+                    android:layout_height="30dp"
+                    android:text="武汉市武昌区中北路停车场My柜/FC52133"
                     />
 
             </LinearLayout>
@@ -82,29 +88,38 @@
 
         </RelativeLayout>
 
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/middle_margin"
+            android:layout_marginRight="@dimen/middle_margin"
+            android:layout_marginTop="@dimen/middle_margin"
             >
             <LinearLayout
                 android:id="@+id/jisong"
-                android:gravity="center"
+                android:gravity="left|top"
+                android:layout_gravity="left"
                 android:layout_width="0dp"
                 android:layout_weight="5"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:layout_margin="@dimen/middle_margin"
-                android:background="@color/greenyellow"
                 >
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="top"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:background="@color/greenyellow"
+                    >
                 <ImageView
                     android:id="@+id/leftico"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/gezi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/myguizi"
                     />
                 <TextView
                     android:id="@+id/lefttitle"
@@ -112,25 +127,40 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="寄快递"
+                    android:paddingLeft="@dimen/middle_margin"
                     />
+                </LinearLayout>
             </LinearLayout>
 
 
 
-            <LinearLayout
-                android:id="@+id/getindex"
-                android:gravity="center"
-                android:layout_width="0dp"
-                android:layout_weight="5"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_margin="@dimen/middle_margin"
-                android:background="@color/lightgreen"
-                >
+
+
+                <LinearLayout
+                    android:id="@+id/getindex"
+                    android:gravity="center|top"
+                    android:layout_gravity="center"
+                    android:paddingTop="0dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:background="@color/lightgreen"
+                    >
+
                 <ImageView
                     android:id="@+id/getindexleftico"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:background="@mipmap/gezi"
                     />
                 <TextView
@@ -139,7 +169,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="取快递"
+                    android:paddingLeft="@dimen/middle_margin"
                     />
+
+                </LinearLayout>
             </LinearLayout>
 
 
@@ -149,25 +182,34 @@
 
             <LinearLayout
                 android:id="@+id/put"
-                android:gravity="center"
+                android:gravity="right"
+                android:layout_gravity="right"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
                 android:orientation="horizontal"
-                android:layout_margin="@dimen/middle_margin"
-                android:background="@color/aquamarine"
                 >
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:background="@color/aquamarine"
+                    >
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/gezi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/cunkuaidi"
                     />
                 <TextView
                     android:layout_toRightOf="@+id/leftico"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="存放物品"
+                    android:paddingLeft="@dimen/middle_margin"
                     />
+                </LinearLayout>
             </LinearLayout>
 
 
@@ -184,8 +226,15 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
+        android:background="@color/guitop"
         >
-        <include android:layout_width="match_parent" android:layout_height="0dp"  android:layout_weight="1" layout="@layout/head" />
+        <!--<include android:layout_width="match_parent" android:layout_height="0dp"  android:layout_weight="1" layout="@layout/head" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="快递员登录"
+            android:gravity="center"
+            />
     </LinearLayout>
 
 </LinearLayout>

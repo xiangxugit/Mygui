@@ -8,6 +8,6 @@
         android:id="@+id/ad"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/lawngreen"
+        android:background="@mipmap/timg"
         />
 </LinearLayout>

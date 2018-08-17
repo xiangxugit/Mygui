@@ -3,33 +3,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-
-
     >
-
     <LinearLayout
+        android:paddingLeft="@dimen/middle_margin"
         android:id="@+id/testliucheng"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/blue"
+        android:layout_height="match_parent"
+        android:background="@color/guitop"
         android:orientation="horizontal"
-        android:maxHeight="@dimen/headhgiht"
-        android:padding="@dimen/middle_margin"
         >
-
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/headtitle"
-            android:textSize="@dimen/headtopright"
-            />
-
+            android:textColor="@color/aliceblue"
+            android:textSize="20sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/headrighttitle"
-            android:textSize="@dimen/headtopright"
+            android:textSize="15sp"
+            android:textColor="@color/darkkhaki"
+            android:layout_marginLeft="@dimen/middle_margin"
             />
 
 
