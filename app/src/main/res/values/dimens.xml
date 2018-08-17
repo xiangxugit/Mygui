@@ -13,6 +13,25 @@
 
 
 
+    <!--正确分辨率-->
+    <dimen name="indexpadding">80dp</dimen>
+    <dimen name="indexmiddlesize">30sp</dimen>
+
+    <dimen name="topmygui">50sp</dimen>
+    <dimen name="topmyguiright">46sp</dimen>
+    <dimen name="middlemygui">40sp</dimen>
+
+    <dimen name="middlemyguione">20sp</dimen>
+    <dimen name="middlemyguitwo">20sp</dimen>
+
+
+
+
+
+
+
+
+
 
 
 </resources>

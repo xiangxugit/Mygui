@@ -11,18 +11,19 @@
         android:layout_height="match_parent"
         android:background="@color/guitop"
         android:orientation="horizontal"
+        android:gravity="left|center"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/headtitle"
             android:textColor="@color/aliceblue"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/topmygui"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/headrighttitle"
-            android:textSize="15sp"
+            android:textSize="@dimen/topmygui"
             android:textColor="@color/darkkhaki"
             android:layout_marginLeft="@dimen/middle_margin"
             />
