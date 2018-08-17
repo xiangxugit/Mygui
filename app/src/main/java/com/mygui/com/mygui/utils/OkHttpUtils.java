@@ -4,7 +4,23 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.widget.ImageView;
+
+import com.mygui.com.mygui.utils.TokenInterceptor;
+
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.FormBody;
+import okhttp3.Headers;
+import okhttp3.Interceptor;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,17 +31,6 @@ import java.net.URLConnection;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.FormBody;
-import okhttp3.Headers;
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
 
 /**
  * OkHttpUtils工具类
@@ -157,18 +162,19 @@ public class OkHttpUtils {
         if(null==jsonEntity){
             return;
         }
-        RetrofitHttp.getInstance(url.substring(0, url.lastIndexOf('/') + 1)).isUrlAvailable(url, 2000, new RetrofitHttp.UrlCheckCallback() {
-            @Override
-            public void onSuccess() {
-                RequestBody body = RequestBody.create(JSON, jsonEntity);
-                Request request = new Request.Builder().url(url).post(body).build();
-                deliveryResult(callback, request);
-            }
-
-            @Override
-            public void onFailure() {
-            }
-        });
+//        RetrofitHttp.getInstance(url.substring(0, url.lastIndexOf('/') + 1)).isUrlAvailable(url, 2000, new RetrofitHttp.UrlCheckCallback() {
+//            @Override
+//            public void onSuccess() {
+//                RequestBody body = RequestBody.create(JSON, jsonEntity);
+//                Request request = new Request.Builder().url(url).post(body).build();
+//                deliveryResult(callback, request);
+//            }
+//
+//            @Override
+//            public void onFailure() {
+//                LogUtils.e(TAG, "isUrlAvailable: dl_info: url有误！连接打不开! url = " + url);
+//            }
+//        });
     }
 
     /**
@@ -519,13 +525,13 @@ public class OkHttpUtils {
     }
 
     private void sendFailedStringCallback(final Request request, final IOException e, final StringCallback callback) {
-        mDelivery.post(new Runnable() {
-            @Override
-            public void run() {
+//        mDelivery.post(new Runnable() {
+//            @Override
+//            public void run() {
 //                if (callback != null)
 //                    callback.onFailure(ErrCodeConstant.ERR_COMM, request, e);
-            }
-        });
+//            }
+//        });
     }
 
     private void sendSuccessStringCallback(final String string, final StringCallback callback) {
