@@ -1,7 +1,9 @@
-package com.mygui.com.mygui;
+package com.mygui.com.mygui.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.mygui.com.mygui.R;
 
 public class GetActivity extends AppCompatActivity {
 
