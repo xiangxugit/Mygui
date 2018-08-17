@@ -1,4 +1,4 @@
-package com.mygui.com.mygui.com.mygui.com.mygui.contants;
+package com.mygui.com.mygui.utils;
 
 public class Constant {
     public static final int DOWNLOADAPK_ID = 10;

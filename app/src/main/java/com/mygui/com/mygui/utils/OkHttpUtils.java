@@ -1,4 +1,4 @@
-package com.mygui.com.mygui.com.mygui.com.mygui.utils;
+package com.mygui.com.mygui.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

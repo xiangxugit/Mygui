@@ -1,8 +1,8 @@
-package com.mygui.com.mygui.com.mygui.com.mygui.utils;
+package com.mygui.com.mygui.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.mygui.com.mygui.com.mygui.com.mygui.contants.UriConstant;
+import com.mygui.com.mygui.contants.UriConstant;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.mygui.com.mygui.com.mygui.com.mygui.contants;
+package com.mygui.com.mygui.contants;
 
 public class UriConstant {
     public static String IP = "192.168.0.50";//阿强

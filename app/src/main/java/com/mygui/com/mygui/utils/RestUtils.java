@@ -1,7 +1,7 @@
-package com.mygui.com.mygui.com.mygui.com.mygui.utils;
+package com.mygui.com.mygui.utils;
 
 
-import com.mygui.com.mygui.com.mygui.com.mygui.contants.UriConstant;
+import com.mygui.com.mygui.contants.UriConstant;
 
 /**
  * Created by Administrator on 2018/5/14 0014.

@@ -1,4 +1,4 @@
-package com.mygui.com.mygui.com.mygui.com.mygui.utils;
+package com.mygui.com.mygui.utils;
 
 /**
  * 下载过程中的回调处理
